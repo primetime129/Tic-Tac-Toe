@@ -1,0 +1,82 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  :root {
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #2d8f85;
+    --clr-5: #637c54;
+  }
+  
+body {
+
+    font-family: 'Arial', sans-serif;
+    background: var(--clr-2);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column; /* Added to stack items vertically */
+}
+
+.dark-theme {
+    background-color: #111;
+    color: #fff;
+}
+
+.neon-text {
+    text-align: center;
+    text-shadow: 0 0 10px #ff6ac1, 0 0 20px #ff6ac1, 0 0 30px #ff6ac1;
+}
+
+.neon-button-container {
+    display: flex;
+    flex-direction: column; /* Added to stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px;
+}
+
+.neon-button {
+    background-color: #ff6ac1; /* Neon pink color */
+    color: #fff;
+    border: 2px solid #ff6ac1; /* Neon pink border */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px; /* Adjusted margin to move the button down */
+}
+
+.neon-button:hover {
+    background-color: #fff; /* White color on hover */
+    color: #ff6ac1; /* Neon pink text on hover */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ff6ac1; /* Neon pink border */
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    background-color: #ff83d7; /* Slightly darker neon pink on hover */
+}

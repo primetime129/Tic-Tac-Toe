@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body class="dark-theme">
+    <h1 class="neon-text">Tic Tac Toe</h1>
+    <div id="message" class="neon-text"></div>
+    <div class="grid-container" onclick="handleCellClick(event)">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <button onclick="restartGame()" class="neon-button">Restart Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
